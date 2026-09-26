@@ -1,7 +1,7 @@
 # db.py
 from motor.motor_asyncio import AsyncIOMotorClient
 
-mongoURL = "mongodb+srv://admin:admin@cluster.xaq58zj.mongodb.net/?appName=Cluster"
+mongoURL = "mongodb://210120116054:210120116054@<hostname>/?ssl=true&replicaSet=atlas-l9vouv-shard-0&authSource=admin&appName=Project&compressors=zlib"
 
 client = AsyncIOMotorClient(mongoURL, tls=True,
     tlsAllowInvalidCertificates=True)
